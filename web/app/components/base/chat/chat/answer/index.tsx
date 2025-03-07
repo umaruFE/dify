@@ -132,24 +132,24 @@ const Answer: FC<AnswerProps> = ({
             }
             {/** Render the normal steps */}
             {
-              workflowProcess && !hideProcessDetail && (
-                <WorkflowProcessItem
-                  data={workflowProcess}
-                  item={item}
-                  hideProcessDetail={hideProcessDetail}
-                />
-              )
+              // workflowProcess && !hideProcessDetail && (
+              //   <WorkflowProcessItem
+              //     data={workflowProcess}
+              //     item={item}
+              //     hideProcessDetail={hideProcessDetail}
+              //   />
+              // )
             }
             {/** Hide workflow steps by it's settings in siteInfo */}
             {
-              workflowProcess && hideProcessDetail && appData && (
-                <WorkflowProcessItem
-                  data={workflowProcess}
-                  item={item}
-                  hideProcessDetail={hideProcessDetail}
-                  readonly={!appData.site.show_workflow_steps}
-                />
-              )
+              // workflowProcess && hideProcessDetail && appData && (
+              //   <WorkflowProcessItem
+              //     data={workflowProcess}
+              //     item={item}
+              //     hideProcessDetail={hideProcessDetail}
+              //     readonly={!appData.site.show_workflow_steps}
+              //   />
+              // )
             }
             {
               responding && !content && !hasAgentThoughts && (
